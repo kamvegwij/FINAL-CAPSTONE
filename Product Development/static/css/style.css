@@ -1,0 +1,105 @@
+.info {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size:cover;
+  background-position: center;
+  font-family:sans-serif;
+  border: 1px solid white;
+  border-bottom-color: black;
+  margin-bottom: 100px;
+  margin-left: 100px; margin-right: 100px;
+  position:center;
+}
+.nav {
+  display:flex;
+  justify-content: right;
+  background-color: rgb(64, 205, 158);
+  text-align: right;
+  height: 80px;
+}
+
+.bottom-section{
+  display:flex;
+  justify-content: center;
+  background-color: rgb(64, 205, 158);
+  text-align: left;
+  height: 80px;
+  position: bottom;
+}
+
+.chat-display{
+  height: 800px;
+  margin-left: 200px;
+  background-color: rgb(139, 133, 144);
+
+}
+
+.nav #logo{
+  margin-right: 850px;
+}
+
+#horBar li {
+  display:block;
+  width: 150px;
+  float: right;
+}
+#chat a{
+  color: brown;
+}
+
+#horBar a {
+  color: rgb(255, 255, 255);
+  background-color: rgb(64, 205, 158);
+  text-decoration: none;
+  padding: 4px;
+  display: block;
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.num{
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: rgb(218, 39, 39);
+  position: relative;
+}
+.left-cont {
+  text-align: left;
+  position: left;
+}
+
+.right-cont{
+  text-align: right;
+  position: right;
+}
+.left {
+  text-align: left;
+  float: left;
+  position: left;
+}
+.chat-head {
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size:60px;
+}
+h2 {
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size:15px;
+}
+h3 {
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size:15px;
+}
+
