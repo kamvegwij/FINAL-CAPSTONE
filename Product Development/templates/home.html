@@ -9,39 +9,40 @@
         <title>QuickHelp</title>
     </head>
     <body>
-        <div class = "nav">
-            <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" id = "logo" class="img" width = 50 height = 50>
-            <nav>
-                <ul id="horBar">  
-                    <li>  
-                    <a href="\chatroom"> CHATROOM </a>  
-                    </li>  
-                    <li>  
-                    <a href = "\help"> HELPLINES </a>  
-                    </li>  
-                    <li>  
-                    <a href = "\"> HOME </a>  
-                    </li> 
-                </ul>
-            </nav>
-        </div>
-
-        <div class = "info">
-            <h1>Welcome to QuickHelp</h1><br>
-                <p>
-                <div class = "left-cont">
-                QuickHelp is a webservice that aims to provide a platform to connect you to the help that you need.
-                Look through the helplines, go to the chatroom and help us help you.
-                </div>
-                <div class = "right-cont">
-                    <img src="{{ url_for('static', filename='/img/man.png') }}" class="img" align = "right" width = 250 height = 250>
-                </div>
-            </p>
-        </div>
-        <div class = "bottom-section">
-            <label "call-us"> (021) 567-6670<</label><br>
-            <label "email-us"> support@quickhelp.org</label><br>
-            <label>56 Century Boulevard, Century City, 7785</label>
-        </div>
+        <form action="/" method="post">
+            <div class = "nav">
+                <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" id = "logo" class="img" width = 50 height = 50>
+                <nav>
+                    <ul id="horBar">  
+                        <li>  
+                        <a href="\chatroom"> CHATROOM </a>  
+                        </li>  
+                        <li>  
+                        <a href = "\help"> HELPLINES </a>  
+                        </li>  
+                        <li>  
+                        <a href = "\"> HOME </a>  
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+                <div class = "info">
+                    <h1>Welcome to QuickHelp</h1><br>
+                    <p>
+                        <div class = "left-cont">
+                        QuickHelp is a webservice that aims to provide a platform to connect you to the help that you need.
+                        Look through the helplines, go to the chatroom and help us help you.
+                        </div>
+                        <div class = "right-cont">
+                            <img src="{{ url_for('static', filename='/img/man.png') }}" class="img" align = "right" width = 250 height = 250>
+                        </div>
+                    </p>
+                </div>        
+                <div class = "bottom-section">
+                <label "call-us"> (021) 567-6670<</label><br>
+                <label "email-us"> support@quickhelp.org</label><br>
+                <label>56 Century Boulevard, Century City, 7785</label>
+            </div>
+    </form>
     </body>
 </html>
