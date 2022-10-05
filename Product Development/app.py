@@ -1,4 +1,3 @@
-from urllib import request
 from flask import Flask, render_template, url_for, session, request, redirect
 from flask_socketio import SocketIO, send
 
