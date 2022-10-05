@@ -1,3 +1,9 @@
+.signup{
+  background-color: rgb(172, 239, 228);
+  font-family: sans-serif;
+  justify-content: center;
+  position: relative;
+}
 .info {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -90,7 +96,7 @@
 h1 {
   text-align: center;
   color:rgb(0, 0, 0);
-  font-size:60px;
+  font-size:50px;
 }
 h2 {
   text-align: center;

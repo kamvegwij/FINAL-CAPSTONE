@@ -9,10 +9,14 @@ socketio = SocketIO(app)
 @socketio.on('message')
 def handle_message(message):
     print("Recieved message: " + message)
-    send(message, broadcast=True)
+    send(message, broadcast=False) #broadcast set to true send the message to everyone on the server chat.
 
 #pages
-@app.route("/", methods = ['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
+def signup():
+    return render_template("signup.html")
+
+@app.route("/home", methods = ['GET', 'POST'])
 def home():
     return render_template("home.html")
 
