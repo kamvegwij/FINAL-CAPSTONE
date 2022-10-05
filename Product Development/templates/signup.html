@@ -8,7 +8,7 @@
     <title>Signup</title>
 </head>
 
-<body>
+<body class = "signbody">
    
     <div class="signup">
         <h1>QuickHelp Signup</h1>
@@ -20,14 +20,16 @@
                 {% endif %}
             {% endwith %}
         <form action="", method = "post">
-            <label>Username</label><br>
-            <input type="text" name="username" placeholder="Enter Username">
-            <label>Password</label><br> 
-            <input type="password" name="password" placeholder="Enter Password">
-            <label>Confirm Password</label><br>
-            <input type="password" name="password_conf" placeholder="Confirm Password">
+            <script src="{{ url_for('static', filename='/js/signup.js') }}"> </script>
             
-            <button type="submit" >Signup</button>
+            <label>Username</label><br>
+            <input type="text" name="username" placeholder="Enter Username"><br>
+            <label>Password</label><br> 
+            <input type="password" name="password" placeholder="Enter Password"><br>
+            <label>Confirm Password</label><br>
+            <input type="password" name="password_conf" placeholder="Confirm Password"><br>
+
+            <button type="submit" id = 'signbtn'>Signup</button>
 
         </form>
     </div>

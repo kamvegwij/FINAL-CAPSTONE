@@ -1,8 +1,13 @@
 .signup{
-  background-color: rgb(172, 239, 228);
   font-family: sans-serif;
-  justify-content: center;
-  position: relative;
+  background-color: rgb(172, 245, 193);
+  border: 3px dashed rgb(121, 194, 121);
+  border-radius: 25px;
+  margin: auto;
+}
+.signbody{
+  text-align: center;
+  background-color: rgb(192, 234, 194);
 }
 .info {
   background-color: rgb(255, 255, 255);

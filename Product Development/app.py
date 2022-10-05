@@ -9,7 +9,7 @@ socketio = SocketIO(app)
 @socketio.on('message')
 def handle_message(message):
     print("Recieved message: " + message)
-    send(message, broadcast=False) #broadcast set to true send the message to everyone on the server chat.
+    send(message, broadcast=True) #broadcast set to true send the message to everyone on the server chat.
 
 #pages
 @app.route("/", methods=['GET', 'POST'])
