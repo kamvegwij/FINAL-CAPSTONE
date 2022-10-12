@@ -1,28 +1,68 @@
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(192, 234, 194);
+}
+.info{
+  height: 500px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(64, 146, 87);
+  margin-bottom: 100px;
+  margin-left: 100px; margin-right: 100px;
+  position:center;
+  justify-content: center;
+}
+/*
+sign up page styling
+*/
 .signup{
-  font-family: sans-serif;
-  background-color: rgb(172, 245, 193);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  background-color: rgb(116, 201, 140);
   border: 3px dashed rgb(121, 194, 121);
   border-radius: 25px;
-  margin: auto;
+  margin-top: 100px;
+  height: 500px;
 }
+
+#signbtn{
+  height: 50px;
+  width: 90px;
+  border-radius: 5px;
+  background-color: rgb(192, 234, 194);
+
+}
+#signbtn:active {
+  background-color: #24bf52;
+  top: 4px;
+  box-shadow: 0 0 0 1px #197635 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #227235,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+  }
+ 
+#signbtn:hover {
+  background-color: #15642d;
+  position: relative;
+  top: -1px;
+  box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: grab;
+}
+  
 .signbody{
   text-align: center;
   background-color: rgb(192, 234, 194);
 }
-.info {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-size:cover;
-  background-position: center;
-  font-family:sans-serif;
-  border: 1px solid white;
-  border-bottom-color: black;
+/*
+home page styling
+*/
+.info{
+  height: 500px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(116, 201, 140);
   margin-bottom: 100px;
   margin-left: 100px; margin-right: 100px;
   position:center;
+  justify-content: center;
 }
+/*
+navigation bar styling
+*/
 .nav {
   display:flex;
   justify-content: right;
@@ -30,46 +70,25 @@
   text-align: right;
   height: 80px;
 }
-
-.bottom-section{
-  display:flex;
-  justify-content: center;
-  background-color: rgb(64, 205, 158);
-  text-align: left;
-  height: 80px;
-  position: bottom;
-}
-
-.chat-display{
-  height: 800px;
-  margin-left: 200px;
-  background-color: rgb(254, 254, 255);
-
-}
-
-.nav #logo{
-  margin-right: 850px;
-}
-
 #horBar li {
   display:block;
   width: 150px;
   float: right;
 }
-#chat a{
-  color: brown;
-}
-
 #horBar a {
-  color: rgb(255, 255, 255);
+  color: rgb(1, 1, 1);
   background-color: rgb(64, 205, 158);
   text-decoration: none;
   padding: 4px;
   display: block;
-  font-size: 20px;
+  font-size: 15px;
   margin-right: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+  
 }
-
 .num{
   list-style-type: none;
   list-style: none;
@@ -79,16 +98,43 @@
   color: rgb(218, 39, 39);
   position: relative;
 }
-.left-cont {
-  text-align: left;
-  position: left;
+
+/*
+bottom bar styling
+*/
+.bottom-section{
+  display:flex;
+  justify-content: left;
+  height: 80px;
+}
+#botBar li {
+  display:block;
+  width: 150px;
+  float: right;
 }
 
-.right-cont{
-  text-align: right;
-  position: right;
+#botBar a {
+  padding: 4px;
+  display: block;
+  font-size: 15px;
+  margin-right: 50px;
+  box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
-.left {
+/*
+chatroom styling
+*/
+.chat-display{
+  height: 800px;
+  margin-left: 200px;
+  background-color: rgb(254, 254, 255);
+
+}
+
+#chat a{
+  color: brown;
+}
+.psych-head {
   text-align: left;
   float: left;
   position: left;
@@ -96,21 +142,97 @@
 .chat-head {
   text-align: center;
   position: relative;
+  padding: auto;
+}
+#messages {
+  margin-left: 250px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  border: 3px solid black;
+}
+
+.chat-bod{
+  background-color: rgb(116, 201, 140);
+}
+
+#message{
+  height: 50px;
+  width: 180px;
+  background-color: rgb(192, 234, 194);
+}
+
+#sendbtn {
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: rgb(192, 234, 194);
+}
+#sendbtn:active {
+  background-color: #24bf52;
+  top: 4px;
+  box-shadow: 0 0 0 1px #197635 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #227235,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
+  }
+ 
+#sendbtn:hover {
+  background-color: #15642d;
+  position: relative;
+  top: -1px;
+  box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+  cursor: grab;
+}
+
+/*
+general styling
+*/
+.left-cont {
+  text-align: left;
+  position: left;
 }
 
 h1 {
   text-align: center;
   color:rgb(0, 0, 0);
-  font-size:50px;
+  font-size:30px;
 }
 h2 {
   text-align: center;
   color:rgb(0, 0, 0);
-  font-size:15px;
-}
-h3 {
-  text-align: center;
-  color:rgb(0, 0, 0);
-  font-size:15px;
+  font-size:25px;
+  border: 3px solid black;
+  border-radius: 0.5px;
 }
 
+#logo {
+  justify-content: left;
+  border: 2px solid rgb(35, 142, 106);;
+  border-radius: 50%;
+}
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: rgb(64, 205, 158);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1.5s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 3;
+  visibility: visible;
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
         <title>QuickHelp</title>
@@ -11,20 +11,22 @@
     <body>
         <form action="/" method="post">
             <div class = "nav">
-                <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" id = "logo" class="img" width = 50 height = 50>
+                <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="left" id = "logo" width = 50 height = 50>
+                <span class="hovertext" data-hover="go to this page">
                 <nav>
                     <ul id="horBar">  
                         <li>  
-                        <a href="\chatroom"> CHATROOM </a>  
+                        <a href="\chat"> CHATROOM </a>  
                         </li>  
                         <li>  
                         <a href = "\help"> HELPLINES </a>  
                         </li>  
                         <li>  
-                        <a href = "\"> HOME </a>  
+                        <a href = "\home"> HOME </a>  
                         </li> 
                     </ul>
                 </nav>
+                </span>
             </div>
                 <div class = "info">
                     <h1>Welcome to QuickHelp</h1><br>
@@ -33,16 +35,25 @@
                         QuickHelp is a webservice that aims to provide a platform to connect you to the help that you need.
                         Look through the helplines, go to the chatroom and help us help you.
                         </div>
-                        <div class = "right-cont">
-                            <img src="{{ url_for('static', filename='/img/man.png') }}" class="img" align = "right" width = 250 height = 250>
-                        </div>
                     </p>
                 </div>        
                 <div class = "bottom-section">
-                <label "call-us"> (021) 567-6670<</label><br>
-                <label "email-us"> support@quickhelp.org</label><br>
-                <label>56 Century Boulevard, Century City, 7785</label>
-            </div>
+                    <span class="hovertext" data-hover="click on image to complete action">
+                    <nav>
+                        <ul id="botBar">  
+                            <li>  
+                          <!-- test number-->  <a href="tel:0655784075"><img src="{{ url_for('static', filename='/img/call-img.png') }}" id = "logo" width = 25 height = 25></a>  
+                            </li>  
+                            <li>  
+                            <a href = "mailto:quickhelp@gmail.com"><img src="{{ url_for('static', filename='/img/email-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                            </li>  
+                            <li>  
+                            <a><img src="{{ url_for('static', filename='/img/location-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                            </li> 
+                        </ul>
+                    </nav>
+                    </span>
+                </div>
     </form>
     </body>
 </html>

@@ -11,23 +11,25 @@
     <body>
         <form action="/help" method="post">
             <div class = "nav">
-                <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" class="img" align = "left" width = 50 height = 50>
+                <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="left" id = "logo" width = 50 height = 50>
+                <span class="hovertext" data-hover="go to this page">
                 <nav>
-                    <ul class id="horBar">  
+                    <ul id="horBar">  
                         <li>  
-                        <a href="\chatroom"> CHATROOM </a>  
+                        <a href="\chat"> CHATROOM </a>  
                         </li>  
                         <li>  
                         <a href = "\help"> HELPLINES </a>  
                         </li>  
                         <li>  
-                        <a href = "\"> HOME </a>  
+                        <a href = "\home"> HOME </a>  
                         </li> 
                     </ul>
                 </nav>
+                </span>
             </div>
             <div class = "info">
-                <h1>HELPLINES</h1><br>
+                <h1>Helplines</h1><br>
                     <p>
                         <ul class = "num" id="numbers">
                             <label>National GBV Helpline</label></label><li><a href="tel:0800 150 150"> 0800 150 150</a></li>
@@ -35,14 +37,25 @@
                             <label>AIDS Helpline</label><li><a href="tel:0800 012 322">0800 012 322</a></li>
                             <label>National Counselling Line</label><li><a href="tel:0861 322 322">0861 322 322</a></li>
                             <label>Childline South Africa</label><li><a href="tel:0800 055 555">0800 055 555</a></li>
-                            <label>Test Phone Number</label><li><a href="tel:065 578 4075">065 578 4075</a></li>
                         </ul>
                     </p>
             </div>
             <div class = "bottom-section">
-                <label "call-us"> (021) 567-6670<</label><br>
-                <label "email-us"> support@quickhelp.org</label><br>
-                <label>56 Century Boulevard, Century City, 7785</label>
+                <span class="hovertext" data-hover="click on image to complete action">
+                <nav>
+                    <ul id="botBar">  
+                        <li>  
+                      <!-- test number-->  <a href="tel:0655784075"><img src="{{ url_for('static', filename='/img/call-img.png') }}" id = "logo" width = 25 height = 25></a>  
+                        </li>  
+                        <li>  
+                        <a href = "mailto:quickhelp@gmail.com"><img src="{{ url_for('static', filename='/img/email-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                        </li>  
+                        <li>  
+                        <a><img src="{{ url_for('static', filename='/img/location-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                        </li> 
+                    </ul>
+                </nav>
+                </span>
             </div>
         </form>
     </body>

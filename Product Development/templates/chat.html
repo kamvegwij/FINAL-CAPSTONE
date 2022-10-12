@@ -11,40 +11,54 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <title>QuickHelp-Chat</title>
     </head>
-    <body>
-            <div class = "nav">
-                <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" class="img" align = "left" width = 50 height = 50>
-                <nav>
-                    <ul class id="horBar">  
-                        <li>  
-                        <a href="\chatroom"> CHATROOM </a>  
-                        </li>  
-                        <li>  
-                        <a href = "\help"> HELPLINES </a>  
-                        </li>  
-                        <li>  
-                        <a href = "\"> HOME </a>  
-                        </li> 
-                    </ul>
-                </nav>
-            </div>
-                <div class = "left">
+    <body class="chat-bod">
+        <div class = "nav">
+            <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="left" id = "logo" width = 50 height = 50>
+            <span class="hovertext" data-hover="go to this page">
+            <nav>
+                <ul id="horBar">  
+                    <li>  
+                    <a href="\chat"> CHATROOM </a>  
+                    </li>  
+                    <li>  
+                    <a href = "\help"> HELPLINES </a>  
+                    </li>  
+                    <li>  
+                    <a href = "\home"> HOME </a>  
+                    </li> 
+                </ul>
+            </nav>
+            </span>
+        </div>
+                <div class = "psych-head">
                     <h2>Online Psychologists</h2><br>
                 </div>
                 <div class="chat-head">
-                    <h3>Shinya Online</h3>
+                    <h2>Shinya Online</h2>
                 </div>
 
                 <script src="{{ url_for('static', filename='/js/client.js') }}"> </script>
                     <div id="messages" class = "chat-display">
-                        <input type="text" id="message" placeholder="Type message here">
+                        <input type="text" id="message" placeholder="Say something">
                         <button id="sendbtn">Send</button>
                 
                     </div>
-            <div class = "bottom-section">
-                <label "call-us"> (021) 567-6670<</label><br>
-                <label "email-us"> support@quickhelp.org</label><br>
-                <label>56 Century Boulevard, Century City, 7785</label>
-            </div>
+                    <div class = "bottom-section">
+                        <span class="hovertext" data-hover="click on image to complete action">
+                        <nav>
+                            <ul id="botBar">  
+                                <li>  
+                              <!-- test number-->  <a href="tel:0655784075"><img src="{{ url_for('static', filename='/img/call-img.png') }}" id = "logo" width = 25 height = 25></a>  
+                                </li>  
+                                <li>  
+                                <a href = "mailto:quickhelp@gmail.com"><img src="{{ url_for('static', filename='/img/email-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                                </li>  
+                                <li>  
+                                <a><img src="{{ url_for('static', filename='/img/location-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                                </li> 
+                            </ul>
+                        </nav>
+                        </span>
+                    </div>
     </body>
 </html>
