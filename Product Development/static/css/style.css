@@ -1,24 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Fuzzy+Bubbles&display=swap');
 body {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: rgb(192, 234, 194);
-}
-.info{
-  height: 500px;
-  border: 3px solid rgb(0, 0, 0);
-  background-color: rgb(64, 146, 87);
-  margin-bottom: 100px;
-  margin-left: 100px; margin-right: 100px;
-  position:center;
-  justify-content: center;
+  font-family: 'Changa', sans-serif;
+  background-color: rgb(116, 201, 140);
+  background-size: cover;
 }
 /*
 sign up page styling
 */
 .signup{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-  background-color: rgb(116, 201, 140);
-  border: 3px dashed rgb(121, 194, 121);
-  border-radius: 25px;
+  background: linear-gradient(rgb(116, 201, 140), rgb(112, 112, 61));
+  border-radius: 45px;
   margin-top: 100px;
   height: 500px;
 }
@@ -26,8 +17,9 @@ sign up page styling
 #signbtn{
   height: 30px;
   width: 80px;
-  border-radius: 2px;
-  background-color: rgb(192, 234, 194);
+  border-radius: 30%;
+  /*background-color: rgb(192, 234, 194);*/
+  background: linear-gradient(rgb(192, 234, 194), rgb(88, 163, 92));
 
 }
 #signbtn:active {
@@ -37,28 +29,40 @@ sign up page styling
   }
  
 #signbtn:hover {
-  background-color: #15642d;
+  background: linear-gradient(#15642d, rgb(88, 163, 92));
   position: relative;
   top: -1px;
   box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
   cursor: grab;
+  border-radius: 30%;
 }
   
 .signbody{
   text-align: center;
-  background-color: rgb(192, 234, 194);
+}
+.signup h1{
+  background: linear-gradient(rgb(11, 11, 11), rgb(78, 78, 40));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 45px;
 }
 /*
 home page styling
 */
 .info{
+  background: linear-gradient(rgb(116, 201, 140), rgb(112, 112, 61));
   height: 500px;
-  border: 3px solid rgb(0, 0, 0);
-  background-color: rgb(116, 201, 140);
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
   margin-bottom: 100px;
   margin-left: 100px; margin-right: 100px;
   position:center;
   justify-content: center;
+}
+.info h1{
+  font-size: 45px;
+  color:rgb(0, 0, 0)
 }
 /*
 navigation bar styling
@@ -66,7 +70,6 @@ navigation bar styling
 .nav {
   display:flex;
   justify-content: right;
-  background-color: rgb(64, 205, 158);
   text-align: right;
   height: 80px;
 }
@@ -95,7 +98,8 @@ navigation bar styling
   margin: 0;
   padding: 0;
   text-align: center;
-  color: rgb(218, 39, 39);
+  color: rgb(226, 212, 212);
+  font-size: medium;
   position: relative;
 }
 
