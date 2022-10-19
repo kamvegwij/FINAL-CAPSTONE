@@ -52,7 +52,7 @@ home page styling
 */
 .info{
   background: linear-gradient(rgb(116, 201, 140), rgb(112, 112, 61));
-  height: 500px;
+  height: 525px;
   border-bottom-left-radius: 45px;
   border-bottom-right-radius: 45px;
   margin-bottom: 100px;
@@ -80,7 +80,7 @@ navigation bar styling
 }
 #horBar a {
   color: rgb(1, 1, 1);
-  background-color: rgb(64, 205, 158);
+  background: linear-gradient(#15642d, rgb(88, 163, 92));
   text-decoration: none;
   padding: 4px;
   display: block;
@@ -124,6 +124,8 @@ bottom bar styling
   margin-right: 50px;
   box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
+  background: linear-gradient(#15642d, rgb(5, 255, 17));
+  border-radius: 45%;
 }
 /*
 chatroom styling
