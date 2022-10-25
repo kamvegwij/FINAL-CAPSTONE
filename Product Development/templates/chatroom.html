@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=, initial-scale=1.0">
 
         <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script> <!-- Important for socketio importing. Also run pip install eventlet alongside install flask_socketio->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.0/socket.io.js"></script><!-- Important for socketio importing. Also run pip install eventlet alongside install flask_socketio-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
         <!--icon library-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -59,17 +60,58 @@
 
             </aside>
 
-            
-            <div id="emptymessages" class = "chat-display">
+            <br>
+            <p id="inboxchat">
+                <b>{{ confid }}</b>
+            </p>
+            <div id="messages" class = "chat-display">
                     
+                
+                {% for message in messages %}
+                
+                    {% if message.message_to == confid %}
+
+                        <div class="ptextmessage">
+                            <p>
+                                {{ message.message }}
+                            </p>
+                        </div>
+                        
+
+                    {% else %}
+                        <div class="ctextmessage">
+                            <p>
+                                {{ message.message }}
+                            </p>
+                        </div>
+                    {% endif %}
+
+                {% endfor %}
+                
+                <!--
+                <form method="post" id="msgfrm">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Say something"></textarea>
+                    <button type="submit" id="sendbtn"><i class="fa fa-send"></i> Send</button>
+                </form>
+                -->
+
+                
             
             </div>
+
+
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Say something"></textarea>
+            <button type="submit" id="sendbtn"><i class="fa fa-send"></i> Send</button>
+
+            
             
 
         </section>
 
-                    
         
+        <!-- hidden tag used in js for sending the name of the confidant to the backend-->
+        <input type="hidden" id="conf" name="whatever" value="{{ confid }}"/>
+
                     
 
         <div class = "bottom-section">
@@ -90,6 +132,6 @@
             </span>
         </div>
 
-        <!--<script src="{{ url_for('static', filename='/js/client.js') }}"> </script>-->
+        <script src="{{ url_for('static', filename='/js/client.js') }}"> </script>
     </body>
 </html>

@@ -108,8 +108,8 @@ bottom bar styling
 */
 .bottom-section{
   display:flex;
-  justify-content: left;
-  height: 80px;
+  justify-content:left;
+  height: 30px;
 }
 #botBar li {
   display:block;
@@ -130,35 +130,23 @@ bottom bar styling
 /*
 chatroom styling
 */
-.chat-display{
-  height: 800px;
-  margin-left: 200px;
-  background-color: rgb(254, 254, 255);
-
-}
-
-#chat a{
-  color: brown;
-}
-.psych-head {
-  text-align: left;
+aside {
   float: left;
-  position: left;
+  width: 365px;
 }
-.chat-head {
-  text-align: center;
-  position: relative;
-  padding: auto;
-}
-#messages {
-  margin-left: 250px;
+
+.chat-display {
+  margin-right: 0px;
+  margin-left: auto;
   margin-top: 20px;
-  margin-bottom: 50px;
-  height: 400px;
-  width: 400px;
-  background-color: rgb(204, 238, 205);
+  margin-bottom: 20px;
+  height: 310px;
+  width: 1000px;
   text-align: left;
-  border: 2px solid black;
+  overflow: auto;
+  position: relative;
+  border: 1px solid black;
+  background-color: rgb(204, 238, 205);
 }
 
 .chat-bod{
@@ -167,30 +155,54 @@ chatroom styling
 
 #message {
   height: 40px;
-  width: 300px;
+  width: 700px;
+  border-radius: 2px;
+  margin-left: 378px;
+  position: relative;
+  bottom: 20px;
   background-color: rgb(192, 234, 194);
-  border-radius: 5px;
+  
+}
+
+.ctextmessage {
+  max-width: 800px;
+  border: 5px;
+  border-radius: 2px;
+  position: relative;
+  left: 1%;
+  background-color: rgb(170, 217, 153);
+
+}
+.ptextmessage {
+  max-width: 800px;
+  border: 5px;
+  border-radius: 2px;
+  position: relative;
+  text-align: right;
+  left: 19%;
+  background-color: rgb(116, 231, 122);
+  
 }
 
 
 #sendbtn {
-  height: 30px;
+  height: 33px;
   width: 70px;
-  border-radius: 6px;
+  position: relative;
+  margin-left: 3px;
+  bottom: 40px;
+  border-radius: 2px;
   background-color: rgb(192, 234, 194);
 }
 #sendbtn:active {
   background-color: #24bf52;
-  top: 4px;
   box-shadow: 0 0 0 1px #197635 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #227235,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
   }
  
 #sendbtn:hover {
   background-color: #15642d;
-  position: relative;
-  top: -1px;
   box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
-  cursor: grab;
+  cursor: pointer;
 }
 
 /*
