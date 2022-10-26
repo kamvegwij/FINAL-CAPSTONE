@@ -181,6 +181,11 @@ navigation bar styling
   position: relative;
 }
 
+.num a{
+  text-decoration: none;
+  color: #700000;
+}
+
 
 /*
 bottom bar styling
@@ -229,6 +234,20 @@ aside {
   border-right: 3px solid #15642d;
   padding: 1%;
   margin-right: 1%;
+}
+
+.chat a:link, a:visited {
+  background-color: rgba(211, 239, 210, 0.85);
+  border-radius: 5px;
+  width: 97%;
+  padding: 1%;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+.chat a:hover, a:active {
+  background-color: rgba(211, 239, 210);
+  border: 1px solid black;
 }
 
 #chat {
@@ -305,7 +324,6 @@ general styling
 h1 {
   text-align: center;
   color:rgb(0, 0, 0);
-  font-size:30px;
 }
 h2 {
   
@@ -317,17 +335,18 @@ h2 {
 }
 
 h3 {
-  
-  text-align: center;
+  background-color: rgb(193, 215, 196);
+  text-align: left;
   color:rgb(0, 0, 0);
   font-size:20px;
   border: 1px solid black;
   border-radius: 8px;
+  padding-left: 5%;
 }
 
 #logo {
   justify-content: left;
-  border: 2px solid rgb(35, 142, 106);;
+  border: 2px solid rgb(35, 142, 106);
   border-radius: 50%;
 }
 .hovertext {

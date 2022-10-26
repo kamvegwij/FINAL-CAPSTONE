@@ -11,14 +11,8 @@
 <body>
    <div class="sign-container">
     <div class="signup">
-        <h1> <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="center" id = "logo" width = 50 height = 50>QuickHelp</h1>
-            {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                    {% for msg in messages %}
-                        <p>{{msg}}</p>
-                    {% endfor %}
-                {% endif %}
-            {% endwith %}
+        <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" id = "logo" width = 50 height = 50>
+        <h1 style="font-size: 40px;">QuickHelp</h1>
         <form action="", method = "post">
             
             <label>Username</label><br>
