@@ -9,52 +9,56 @@
         <title>QuickHelp</title>
     </head>
     <body>
+
+        <div class = "nav">
+            <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" id = "logo" width = 50 height = 50>
+            <span class="hovertext" data-hover="go to this page">
+            <nav>
+                <ul id="horBar"> 
+                    <li >
+                        <a href="/logout" >LOGOUT</a>
+                    </li>
+                    <li>  
+                    <a href="\chat"> CHATROOM </a>  
+                    </li>  
+                    <li>  
+                    <a href = "\help"> HELPLINES </a>  
+                    </li>  
+                    <li>  
+                    <a href = "\home"> HOME </a>
+                    </li> 
+                </ul>    
+            </nav>
+            </span>
+        </div>
+        
         <form action="/" method="post">
-            <div class = "nav">
-                <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="left" id = "logo" width = 50 height = 50>
-                <span class="hovertext" data-hover="go to this page">
+            
+            <div class = "info">
+                <h1>Welcome to QuickHelp</h1><br>
+                <p>
+                    QuickHelp is a webservice that aims to provide a platform to connect you to the help that you need.
+                    Look through the helplines, go to the chatroom and help us help you.   
+                </p>
+            </div>        
+            <div class = "bottom-section">
+                <script src="{{ url_for('static', filename='/js/clickTest.js') }}"> </script>
+                <span class="hovertext" data-hover="click on image to complete action">
                 <nav>
-                    <ul id="horBar">  
+                    <ul id="botBar">  
                         <li>  
-                        <a href="\chat"> CHATROOM </a>  
+                        <!-- test number-->  <a href="tel:0825748542" onclick="callClick()"><img src="{{ url_for('static', filename='/img/call-img.png') }}" id = "logo" width = 25 height = 25></a>  
                         </li>  
                         <li>  
-                        <a href = "\help"> HELPLINES </a>  
+                        <a href = "mailto:quickhelp@gmail.com"><img src="{{ url_for('static', filename='/img/email-png.png') }}" id = "logo" width = 25 height = 25></a>  
                         </li>  
                         <li>  
-                        <a href = "\home"> HOME </a>  
+                        <a><img src="{{ url_for('static', filename='/img/location-png.png') }}" id = "logo" width = 25 height = 25></a>  
                         </li> 
                     </ul>
                 </nav>
                 </span>
             </div>
-                <div class = "info">
-                    <h1>Welcome to QuickHelp</h1><br>
-                    <p>
-                        <div class = "left-cont">
-                        QuickHelp is a webservice that aims to provide a platform to connect you to the help that you need.
-                        Look through the helplines, go to the chatroom and help us help you.
-                        </div>
-                    </p>
-                </div>        
-                <div class = "bottom-section">
-                    <script src="{{ url_for('static', filename='/js/clickTest.js') }}"> </script>
-                    <span class="hovertext" data-hover="click on image to complete action">
-                    <nav>
-                        <ul id="botBar">  
-                            <li>  
-                          <!-- test number-->  <a href="tel:0655784075" onclick="callClick()"><img src="{{ url_for('static', filename='/img/call-img.png') }}" id = "logo" width = 25 height = 25></a>  
-                            </li>  
-                            <li>  
-                            <a href = "mailto:quickhelp@gmail.com"><img src="{{ url_for('static', filename='/img/email-png.png') }}" id = "logo" width = 25 height = 25></a>  
-                            </li>  
-                            <li>  
-                            <a><img src="{{ url_for('static', filename='/img/location-png.png') }}" id = "logo" width = 25 height = 25></a>  
-                            </li> 
-                        </ul>
-                    </nav>
-                    </span>
-                </div>
     </form>
     </body>
 </html>

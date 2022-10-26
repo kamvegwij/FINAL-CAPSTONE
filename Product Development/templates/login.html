@@ -8,8 +8,8 @@
     <title>Signup</title>
 </head>
 
-<body class = "signbody">
-   
+<body>
+   <div class="sign-container">
     <div class="signup">
         <h1> <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="center" id = "logo" width = 50 height = 50>QuickHelp</h1>
             {% with messages = get_flashed_messages() %}
@@ -22,28 +22,16 @@
         <form action="", method = "post">
             
             <label>Username</label><br>
-            <input type="text" name="username" placeholder="Enter Username"><br>
+            <input type="text" name="username" id="in-field" placeholder="Enter Username"><br>
             <label>Password</label><br> 
-            <input type="password" name="password" placeholder="Enter Password"><br>
+            <input type="password" name="password" id="in-field" placeholder="Enter Password"><br>
 
             <br>
             <a href="/home">
                 <button type="submit" id='signbtn'>Login</button>
                 <button type="submit" id = 'signbtn'>Signup</button>
             </a>
-            
-
         </form>
     </div>
-
-
-
-
-
-
-
-
-
-
-
+   </div>
 </body>

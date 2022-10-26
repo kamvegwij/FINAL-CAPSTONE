@@ -313,7 +313,20 @@ def chat_send(confidant):
 
 @app.route("/logout")
 def logout():
-    return "logged out"
+    try:
+        # query the database, log the user out, and delete the user/psychologist in the online table 
+        with app.app_context():
+            delete_row = Online.query.filter_by(name=session['username']).first()
+
+            db.session.delete(delete_row)
+            db.session.commit() 
+    except:
+        # flash a message  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- TODO
+        return "<h1>ERROR QUERYING THE DATABASE</h1>"
+    
+    session.pop("user", None)
+
+    return render_template("logout.html")
 
 
 # @app.route("/calling")
