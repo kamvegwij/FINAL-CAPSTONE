@@ -167,8 +167,8 @@ navigation bar styling
   cursor: pointer;
   border-radius: 30%;
   height: 30px;
+  text-align: center;
 }
-
 
 .num{
   list-style-type: none;
@@ -234,7 +234,6 @@ aside {
 #chat {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: x-large;
-  
 }
 
 .chat-display {
@@ -242,12 +241,12 @@ aside {
   margin-left: 0%;
   margin-top: 0%;
   margin-bottom: 0%;
-  height: 350px;
+  height: 400px;
   width: 70%;
   overflow-y: auto;
   border: 2px solid black;
   border-radius: 5px;
-  background-color: rgb(204, 238, 205);
+  background: rgba(255, 255, 255, .8)
 }
 
 
@@ -257,39 +256,25 @@ aside {
 
 #message {
   height: 40px;
-  width: 700px;
+  width: 63%;
   border-radius: 2px;
   margin-left: 0%;
-  
+  font-size: large;
   bottom: 0%;
-  background-color: rgb(192, 234, 194);
-  
+  background-color: #fff;
 }
 
 .ctextmessage {
-  /* width: 100%;
-  border: 5px;
-  border-radius: 2px;
-  
-  text-align: left;
-  background-color: rgb(170, 217, 153); */
   border: 2px solid #46a964;
-  background-color: rgb(170, 217, 153);
+  background-color: rgb(170, 217, 153, 0.85);
   border-radius: 5px;
   padding: 4px;
   margin: 4px 0;
 }
 
 .ptextmessage {
-  /* width: 100%;
-  border: 5px;
-  border-radius: 2px;
-  
-  text-align: right;
-  right: 0;
-  background-color: rgb(116, 231, 122); */
   border: 2px solid #15642d;
-  background-color: rgb(116, 231, 122);
+  background-color: rgb(116, 231, 122, 0.85);
   border-radius: 5px;
   padding: 4px;
   margin: 4px 0;
@@ -298,22 +283,14 @@ aside {
 
 
 #sendbtn {
-  height: 33px;
-  width: 70px;
-  
-  margin-left: 3px;
-  bottom: 40px;
-  border-radius: 2px;
-  background-color: rgb(192, 234, 194);
+  height: 46px;
+  width: 6.8%;
+  position: absolute;
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(105, 148, 40, 0.3));
 }
-#sendbtn:active {
-  background-color: #24bf52;
-  box-shadow: 0 0 0 1px #197635 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #227235,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
-  }
  
 #sendbtn:hover {
-  background-color: #15642d;
-  box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(105, 148, 40, 0.5);
   cursor: pointer;
 }
 
