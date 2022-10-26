@@ -40,25 +40,18 @@ sign up page styling
   width: 150px;
 }
 #signbtn{
-  height: 30px;
+  height: 35px;
   width: 80px;
-  border-radius: 30%;
-  /*background-color: rgb(192, 234, 194);*/
-  background: linear-gradient(rgb(192, 234, 194), rgb(88, 163, 92));
+  border-radius: 20%;
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(105, 148, 40, 0.3));
 
 }
-#signbtn:active {
-  background-color: #24bf52;
-  top: 4px;
-  box-shadow: 0 0 0 1px #197635 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 0 0 0      #227235,0 0 0 1px rgba(0, 0, 0, 0.4),0 0px 8px 1px rgba(0, 0, 0, 0.5);
-  }
  
 #signbtn:hover {
-  background: linear-gradient(#15642d, rgb(88, 163, 92));
   position: relative;
   top: -1px;
-  box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
-  cursor: grab;
+  background-color: rgba(105, 148, 40, 0.3);
+  cursor: pointer;
   border-radius: 30%;
 }
   
@@ -164,13 +157,17 @@ navigation bar styling
   border-radius: 25px;
   text-align: center;
   box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
-
   box-shadow: 0px 0px 1px 2px rgb(26, 60, 38);
   box-shadow: 0px 0px 1px 2px rgb(26, 60, 38);
   border-radius: 15%;
   text-align: center;
 }
-
+#horBar a:hover {
+  background-color: rgba(105, 148, 40, 0.3);
+  cursor: pointer;
+  border-radius: 30%;
+  height: 30px;
+}
 
 
 .num{
@@ -190,19 +187,15 @@ bottom bar styling
 */
 .bottom-section{
   position: fixed;
-  bottom: 0;
   left: 2px;
   width: 100%;
   padding: 5px;
   display:flex;
-
   justify-content: left;
-  height: 30px;
+  height: 10px;
   margin-top: 1%;
-  bottom: 0px;
-
+  bottom: 50px;
   justify-content:left;
-
 }
 #botBar li {
   display:block;
@@ -222,6 +215,7 @@ bottom bar styling
   box-shadow: 0px 0px 1px 2px rgb(26, 60, 38);
   border-radius: 15%;
   text-align: center;
+  height: 30px;
 }
 
 
