@@ -110,6 +110,7 @@ bottom bar styling
   display:flex;
   justify-content:left;
   height: 30px;
+  bottom: 0px;
 }
 #botBar li {
   display:block;
@@ -132,22 +133,32 @@ chatroom styling
 */
 aside {
   float: left;
-  width: 365px;
+  width: 25%;
+  height: 490px;
+  border-right: 3px solid #15642d;
+  padding: 1%;
+  margin-right: 1%;
+}
+
+#chat {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+  padding: -10%;
 }
 
 .chat-display {
-  margin-right: 0px;
-  margin-left: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 310px;
-  width: 1000px;
-  text-align: left;
-  overflow: auto;
-  position: relative;
-  border: 1px solid black;
+  margin-right: 0%;
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  height: 350px;
+  width: 70%;
+  overflow-y: auto;
+  border: 2px solid black;
+  border-radius: 5px;
   background-color: rgb(204, 238, 205);
 }
+
 
 .chat-bod{
   background-color: rgb(116, 201, 140);
@@ -157,38 +168,48 @@ aside {
   height: 40px;
   width: 700px;
   border-radius: 2px;
-  margin-left: 378px;
-  position: relative;
-  bottom: 20px;
+  margin-left: 0%;
+  
+  bottom: 0%;
   background-color: rgb(192, 234, 194);
   
 }
 
 .ctextmessage {
-  max-width: 800px;
+  /* width: 100%;
   border: 5px;
   border-radius: 2px;
-  position: relative;
-  left: 1%;
-  background-color: rgb(170, 217, 153);
-
-}
-.ptextmessage {
-  max-width: 800px;
-  border: 5px;
-  border-radius: 2px;
-  position: relative;
-  text-align: right;
-  left: 19%;
-  background-color: rgb(116, 231, 122);
   
+  text-align: left;
+  background-color: rgb(170, 217, 153); */
+  border: 2px solid #46a964;
+  background-color: rgb(170, 217, 153);
+  border-radius: 5px;
+  padding: 4px;
+  margin: 4px 0;
+}
+
+.ptextmessage {
+  /* width: 100%;
+  border: 5px;
+  border-radius: 2px;
+  
+  text-align: right;
+  right: 0;
+  background-color: rgb(116, 231, 122); */
+  border: 2px solid #15642d;
+  background-color: rgb(116, 231, 122);
+  border-radius: 5px;
+  padding: 4px;
+  margin: 4px 0;
+  text-align: right;
 }
 
 
 #sendbtn {
   height: 33px;
   width: 70px;
-  position: relative;
+  
   margin-left: 3px;
   bottom: 40px;
   border-radius: 2px;

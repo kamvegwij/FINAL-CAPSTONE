@@ -62,8 +62,9 @@
 
             <br>
             <p id="inboxchat">
-                <b>{{ confid }}</b>
+                <b id="chat">{{ confid }}</b>
             </p>
+
             <div id="messages" class = "chat-display">
                     
                 
@@ -71,19 +72,19 @@
                 
                     {% if message.message_to == confid %}
 
-                        <div class="ptextmessage">
-                            <p>
+                        <!-- <div class="ptextmessage"> -->
+                            <p class="ptextmessage">
                                 {{ message.message }}
                             </p>
-                        </div>
+                        <!-- </div> -->
                         
 
                     {% else %}
-                        <div class="ctextmessage">
-                            <p>
+                        <!-- <div class="ctextmessage"> -->
+                            <p class="ctextmessage">
                                 {{ message.message }}
                             </p>
-                        </div>
+                        <!-- </div> -->
                     {% endif %}
 
                 {% endfor %}
