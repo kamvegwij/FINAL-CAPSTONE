@@ -6,3 +6,5 @@ QuickHelp is an app designed to help users have direct access to psychologists. 
 - Using sessions in Flask
 - Intermediate HTML/CSS implementation
 - Intermediate Flask implementation
+- Implement API functions and manipulate retrieved data
+- More intermediate CSS usage
