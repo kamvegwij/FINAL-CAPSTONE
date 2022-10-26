@@ -27,7 +27,7 @@ sign up page styling
   border-radius: 15%;
   border: none;
   width: 25%;
-  background: rgba(20, 205, 69, 0.4);
+  background: rgba(255, 255, 255, .4);
   box-shadow: 0px 0px 3px 3px #1e3425;
 }
 #in-field{
@@ -65,39 +65,48 @@ sign up page styling
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 1500;
 }
 /*
 home page styling
 */
 #info-home{
-  background: linear-gradient(rgb(206, 227, 211), rgb(238, 241, 238));
   position: relative;
-  margin:auto;
-  padding: 15px;
-  width: 50%;
-  height: 100%;
-  color:rgb(0, 0, 0)
+  margin: auto;
+  width: 60%;
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(105, 148, 40, 0.3));
+  border: none;
+  margin-top: 5px;
+  text-align: center;
+  font-weight:bolder;
+  font-size: large;
 }
 #info-help{
-  background: linear-gradient(rgb(206, 227, 211), rgb(238, 241, 238));
   position: relative;
-  margin:auto;
-  padding: 15px;
-  width: 80%;
-  color:rgb(0, 0, 0)
+  margin: auto;
+  width: 50%;
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(105, 148, 40, 0.3));
+  border: none;
+  margin-top: 5px;
+  text-align: center;
+  font-weight:bolder;
+  
+}
+.num label {
+  color:rgb(0, 0, 0);
 }
 #quotes{
   position: relative;
   margin: auto;
+  padding: 15px;
   width: 50%;
-  background: rgba(255, 255, 255, .3);
-  border: 2px solid black;
+  background: rgba(255, 255, 255, .4);
+  box-shadow: 0px 0px 1px 2px rgb(98, 102, 43);
   border-radius: 15%;
   margin-top: 20px;
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .info h1{
   font-size: 45px;
@@ -118,17 +127,18 @@ navigation bar styling
   float: right;
 }
 #horBar a {
-  color: rgb(255, 255, 255);
-  background: linear-gradient(rgb(116, 225, 132), rgb(71, 185, 88));
+  color: rgb(13, 2, 2);
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(105, 148, 40, 0.3));
   text-decoration: none;
   padding: 4px;
   display: block;
   font-size: 15px;
+  font-weight: bold;
   margin-right: 50px;
-  border: 1px solid black;
+  box-shadow: 0px 0px 1px 2px rgb(26, 60, 38);
   border-radius: 25px;
   text-align: center;
-  box-shadow: 0px 0px 1px 2px rgb(26, 60, 38);
+  
 }
 .num{
   list-style-type: none;
@@ -160,13 +170,17 @@ bottom bar styling
 }
 
 #botBar a {
+  color: rgb(13, 2, 2);
+  background: linear-gradient(rgba(255, 255, 255, .6), rgba(105, 148, 40, 0.3));
+  text-decoration: none;
   padding: 4px;
   display: block;
   font-size: 15px;
+  font-weight: bold;
   margin-right: 50px;
+  box-shadow: 0px 0px 1px 2px rgb(26, 60, 38);
+  border-radius: 25px;
   text-align: center;
-  background: linear-gradient(rgb(116, 225, 132), rgb(71, 185, 88));
-  border-radius: 45%;
 }
 /*
 chatroom styling
