@@ -71,13 +71,33 @@ sign up page styling
 /*
 home page styling
 */
-.info{
+#info-home{
+  background: linear-gradient(rgb(206, 227, 211), rgb(238, 241, 238));
+  position: relative;
+  margin:auto;
+  padding: 15px;
+  width: 50%;
+  height: 100%;
+  color:rgb(0, 0, 0)
+}
+#info-help{
   background: linear-gradient(rgb(206, 227, 211), rgb(238, 241, 238));
   position: relative;
   margin:auto;
   padding: 15px;
   width: 80%;
   color:rgb(0, 0, 0)
+}
+#quotes{
+  position: relative;
+  margin: auto;
+  width: 50%;
+  background: rgba(255, 255, 255, .3);
+  border: 2px solid black;
+  border-radius: 15%;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 .info h1{
   font-size: 45px;

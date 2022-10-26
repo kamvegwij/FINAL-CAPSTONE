@@ -5,11 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='/js/main.js') }}"> </script>
         <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
         <title>QuickHelp</title>
     </head>
-    <body>
-        <form action="/" method="post">
+    <body onload="getQuotes()">
+        <form action="/" method="post" >
             <div class = "nav">
                 <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="left" id = "logo" width = 50 height = 50>
                 <span class="hovertext" data-hover="go to this page">
@@ -28,15 +29,22 @@
                 </nav>
                 </span>
             </div>
-            <div class = "info">
-                <h1>Welcome to QuickHelp</h1><br>
-                <p>
-                    QuickHelp is a webservice that aims to provide a platform to connect you to the help that you need.
-                    Look through the helplines, go to the chatroom and help us help you.   
+            <div id = "info-home">
+                <h1> <img src="{{ url_for('static', filename='/img/quickhelplogo.jpeg') }}" align="center" id = "logo" width = 50 height = 50>QuickHelp</h1>
+                <p id="infomain">
+                    What is QuickHelp?<br>
+                    This is an amazing site with the sole purpose of helping you. Do you need counselling, access to a helpline or even someone to talk to?
+                    QuickHelp helps you out with all of that by providing quick and efficient access to top helplines, a psychologist read to talk to you and help you and many more features.
+                    Explore by going to Helplines or go straight to the chatroom where you will find the psychologist ready to talk to you.   
                 </p>
-            </div>        
+            </div>
+            <div id="quotes">
+                <h1>Quotes for you</h1>
+                <p id="quotestext">
+                </p>
+            </div>
+                     
             <div class = "bottom-section">
-                <script src="{{ url_for('static', filename='/js/clickTest.js') }}"> </script>
                 <span class="hovertext" data-hover="click on image to complete action">
                 <nav>
                     <ul id="botBar">  
