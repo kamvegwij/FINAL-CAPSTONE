@@ -31,9 +31,12 @@ sign up page styling
   box-shadow: 0px 0px 3px 3px #1e3425;
 }
 #in-field{
-  background-color: rgba(63, 79, 68, 0.274);
+  background:transparent;
+  border:none;
+  border-bottom: 1px solid gray;
   color:rgb(14, 8, 8);
-  height: 20px;
+  outline:none;
+  height: 35px;
   width: 150px;
 }
 #signbtn{
