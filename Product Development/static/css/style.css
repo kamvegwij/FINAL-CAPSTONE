@@ -76,13 +76,16 @@ sign up page styling
 /* now to add some animation to the logo*/
 @keyframes reveal_logo{
   0% {
-    
+    opacity: 0;
+    transform: rotate(90deg);
   }
   50% {
-
+    opacity: 0.4;
+    transform: rotate(180deg);
   }
   100% {
-
+    opacity: 1;
+    transform: rotate(0deg);
   }
 }
 /*
