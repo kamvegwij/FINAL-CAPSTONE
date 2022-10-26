@@ -32,57 +32,43 @@
             </span>
         </div>
         
-        <form action="/help" method="post">
-            
-            <div class = "info">
-            <div class = "nav">
-                <span class="hovertext" data-hover="go to this page">
-                <nav>
-                    <ul id="horBar">  
-                        <li>  
-                        <a href="\chat"> CHATROOM </a>  
-                        </li>  
-                        <li>  
-                        <a href = "\help"> HELPLINES </a>  
-                        </li>  
-                        <li>  
-                        <a href = "\home"> HOME </a>  
-                        </li> 
-                    </ul>
-                </nav>
-                </span>
-            </div>
-            <div id = "info-help">
+        
 
-                <h1>Helplines</h1><br>
-                    <p>
-                        <ul class = "num" id="numbers">
-                            <label>National GBV Helpline</label></label><li><a href="tel:0800 150 150"> 0800 150 150</a></li>
-                            <label>LifeLine South Africa</label><li><a href="tel:0861 322 322">0861 322 322</a></li>
-                            <label>AIDS Helpline</label><li><a href="tel:0800 012 322">0800 012 322</a></li>
-                            <label>National Counselling Line</label><li><a href="tel:0861 322 322">0861 322 322</a></li>
-                            <label>Childline South Africa</label><li><a href="tel:0800 055 555">0800 055 555</a></li>
-                            <label>SADAG Suicide Prevention Line</label><li><a href="tel:0800 567 567">0800 567 567</a></li>
-                        </ul>
-                    </p>
-            </div>
-            <div class = "bottom-section">
-                <span class="hovertext" data-hover="click on image to complete action">
-                <nav>
-                    <ul id="botBar">  
-                        <li>  
-                      <!-- test number-->  <a href="tel:0825748542"><img src="{{ url_for('static', filename='/img/call-img.png') }}" id = "logo" width = 25 height = 25></a>  
-                        </li>  
-                        <li>  
-                        <a href = "mailto:quickhelp@gmail.com"><img src="{{ url_for('static', filename='/img/email-png.png') }}" id = "logo" width = 25 height = 25></a>  
-                        </li>  
-                        <li>  
-                        <a><img src="{{ url_for('static', filename='/img/location-png.png') }}" id = "logo" width = 25 height = 25></a>  
-                        </li> 
+
+        <div id = "info-help">
+
+            <h1>Helplines</h1><br>
+                <p>
+                    <ul class = "num" id="numbers">
+                        <label>National GBV Helpline</label></label><li><a href="tel:0800 150 150"> 0800 150 150</a></li>
+                        <label>LifeLine South Africa</label><li><a href="tel:0861 322 322">0861 322 322</a></li>
+                        <label>AIDS Helpline</label><li><a href="tel:0800 012 322">0800 012 322</a></li>
+                        <label>National Counselling Line</label><li><a href="tel:0861 322 322">0861 322 322</a></li>
+                        <label>Childline South Africa</label><li><a href="tel:0800 055 555">0800 055 555</a></li>
+                        <label>SADAG Suicide Prevention Line</label><li><a href="tel:0800 567 567">0800 567 567</a></li>
                     </ul>
-                </nav>
-                </span>
-            </div>
-        </form>
+                </p>
+        </div>
+
+
+
+        <div class = "bottom-section">
+            <span class="hovertext" data-hover="click on image to complete action">
+            <nav>
+                <ul id="botBar">  
+                    <li>  
+                    <!-- test number-->  <a href="tel:0825748542"><img src="{{ url_for('static', filename='/img/call-img.png') }}" id = "logo" width = 25 height = 25></a>  
+                    </li>  
+                    <li>  
+                    <a href = "mailto:quickhelp@gmail.com"><img src="{{ url_for('static', filename='/img/email-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                    </li>  
+                    <li>  
+                    <a><img src="{{ url_for('static', filename='/img/location-png.png') }}" id = "logo" width = 25 height = 25></a>  
+                    </li> 
+                </ul>
+            </nav>
+            </span>
+        </div>
+
     </body>
 </html>
