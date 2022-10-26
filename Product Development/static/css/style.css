@@ -69,10 +69,11 @@ navigation bar styling
 */
 .nav {
   display:flex;
-  justify-content: right;
+  justify-content: left;
   text-align: right;
   height: 80px;
 }
+
 #horBar li {
   display:block;
   width: 150px;
@@ -90,8 +91,13 @@ navigation bar styling
   border-radius: 25px;
   text-align: center;
   box-shadow: 0 0 0 1px #0d5422 inset,0 0 0 2px rgba(255, 255, 255, 0.15) inset,0 5px 0 0      #16612f,0 5px 0 1px rgba(0, 0, 0, 0.4),0 5px 8px 1px rgba(0, 0, 0, 0.5);
-  
 }
+.hiddenlogout{
+  background-color: yellow;
+  right: 0%;
+}
+
+
 .num{
   list-style-type: none;
   list-style: none;
@@ -103,13 +109,15 @@ navigation bar styling
   position: relative;
 }
 
+
 /*
 bottom bar styling
 */
 .bottom-section{
   display:flex;
-  justify-content:left;
+  justify-content: left;
   height: 30px;
+  margin-top: 1%;
   bottom: 0px;
 }
 #botBar li {
@@ -128,6 +136,8 @@ bottom bar styling
   background: linear-gradient(#15642d, rgb(5, 255, 17));
   border-radius: 45%;
 }
+
+
 /*
 chatroom styling
 */
