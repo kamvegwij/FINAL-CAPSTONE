@@ -1,6 +1,0 @@
-flask
-flask_sqlalchemy
-flask_socketio
-websocket
-eventlet
-twilio
