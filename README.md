@@ -8,3 +8,8 @@ QuickHelp is an app designed to help users have direct access to psychologists. 
 - Intermediate Flask implementation
 - Implement API functions and manipulate retrieved data
 - More intermediate CSS usage
+
+# How to use
+- Logging in use the details username="user" and password="123", username="shinya" password="123"
+- Use the navigation bar to navigate through the pages
+- Simply click the phone numbers in the Helpline page to make a call
